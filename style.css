@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Space+Grotesk&display=swap');
 .container{
-    width: 1440px;
+    max-width: 1440px;
     height: 3300px;
     background-color: black;
     margin: 0 auto;
@@ -77,6 +77,11 @@ h3{
     display: inline-block;
     left: 165px;
     top: 286px;
+}
+.oval{
+    position: absolute;
+    top: 500px;
+    left: 766px;
 }
 .myphoto{
     position: absolute;
@@ -186,10 +191,49 @@ h5{
     width: 546px;
     height: 400px;
 }
-.myprojects div{
+.myprojects img:hover{
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.viewproj{
+    width: 546px;
+    height: 400px;
+    /* opacity: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(5, 4, 4, 0); 
+    position: absolute;
+}
+.opas1{
+    margin-bottom: 30px;
+    font-weight: 800;
+    border-bottom: 1px solid #4EE1A0;
+    opacity: 0;
+}
+.opas2{
+    border-bottom: 1px solid #4EE1A0;
+    font-weight: 800;
+    opacity: 0;
+}
+
+.viewproj:hover{
+
+    background-color: rgba(5, 4, 4, 0.5);
+}
+.viewproj:hover .opas1{
+    opacity: 1;
+}
+.viewproj:hover .opas2{
+    opacity: 1;
+}
+.firstdiv{
     width: 546px;
     height: 360px;
     margin-bottom: 156px;
+    position: relative;
 }
 .myprojects h6{
     display: block;
@@ -206,7 +250,7 @@ h5{
     margin-top: 7px;
     font-family: 'Space Grotesk';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: #D9D9D9;
@@ -253,4 +297,27 @@ button div{
 }
 button img{
     margin-left: 15px;
+}
+
+@media(max-width: 768px){
+    header{
+        width: 708px;
+        margin-left: 30px;
+        margin-top: 29px;
+    }
+    .experience{
+        Width: 708px;
+        Height: 451px;
+        margin-left: 30px;
+        grid-template-columns: auto auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .myphoto{
+        Width: 349.85px;
+        Height: 486px;
+    }
+    .myprojects{
+        margin-left: 30px;
+    }
 }
