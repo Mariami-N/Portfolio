@@ -216,7 +216,7 @@ h5{
 .viewproj{
     width: 546px;
     height: 400px;
-    /* opacity: 0; */
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,8 +428,7 @@ button div{
         margin-top: 30;
     }
     .viewproj{
-        width: 340px;
-        height: 253px;
+        opacity: 0;
     }
     .experience{
         Width: 708px;
@@ -578,6 +577,9 @@ hr{
 .myphoto img{
     Width:174.21px;
     Height:242px;
+}
+.viewproj{
+    opacity: 0;
 }
 .experience{
     Width: 345px;
