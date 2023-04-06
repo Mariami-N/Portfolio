@@ -6,6 +6,7 @@
     position: relative;
     margin: 0 auto;
     background-color: black;
+   
 }
 header{
     width: 1110px;
@@ -13,6 +14,7 @@ header{
     display: inline-block;
     margin-left: 168px;
     margin-top: 39px;
+   
 }
 h6{
     font-family: 'Space Grotesk';
@@ -149,6 +151,7 @@ hr{
     grid-template-columns: auto auto auto;
     margin-top: 70px;
     margin-bottom: 50px;
+   
 }
 .experience h4{
     font-family: 'Space Grotesk';
@@ -172,6 +175,7 @@ section{
     Width: 1110px;
     Height: 1767px;
     left: 165px;
+
 }
 h5{
     font-family: 'Space Grotesk';
